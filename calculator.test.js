@@ -1,8 +1,8 @@
-const Calculator = require("./calculator")
+const Calculator = require('./calculator');
 
-const calculate = new Calculator;
+const calculate = new Calculator();
 
-describe('Calculator', () => {  
+describe('Calculator', () => {
   test('Add', () => {
     expect(calculate.add(1, 1))
       .toBe(2);
@@ -12,7 +12,7 @@ describe('Calculator', () => {
     expect(calculate.subtract(0, 1))
       .toBe(-1);
   });
-  
+
   test('Multiply', () => {
     expect(calculate.multiply(2, 7))
       .toBe(14);

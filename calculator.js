@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 class Calculator {
   add(a, b) {
     return a + b;
@@ -14,6 +15,6 @@ class Calculator {
   divide(a, b) {
     return a / b;
   }
-};
+}
 
 module.exports = Calculator;
